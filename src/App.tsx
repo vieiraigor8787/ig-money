@@ -1,6 +1,6 @@
-import styled from "styled-components";
 import { Dashboard } from "./components/Dashboard";
 import { Header } from "./components/Header";
+import { Transactions } from "./components/TransactionsTable";
 import { GlobalStyle } from "./sytles/global";
 
 export function App() {
@@ -9,6 +9,7 @@ export function App() {
       <GlobalStyle />
       <Header />
       <Dashboard />
+      <Transactions />
     </>
   );
 }
