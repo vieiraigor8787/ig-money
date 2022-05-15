@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
         --text-title: #363f5f;
         --shape: #fff;
     }
-    
+
     *{
         margin: 0;
         padding: 0;
@@ -22,6 +22,15 @@ export const GlobalStyle = createGlobalStyle`
         @media (max-width: 720px) {
             font-size: 87.5%; //14px
         }
+    }
+
+    body, input, textarea, button {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+    h1, h2, h3, h4, strong {
+        font-weight: 600;
     }
 
     body {
