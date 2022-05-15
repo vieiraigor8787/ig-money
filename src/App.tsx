@@ -1,11 +1,13 @@
-import styled from 'styled-components';
-import { GlobalStyle } from './sytles/global';
+import styled from "styled-components";
+import { Header } from "./components/Header";
+import { GlobalStyle } from "./sytles/global";
 
 export function App() {
   return (
     <>
-    <GlobalStyle/>
-    <h1>hello world</h1>
+      <GlobalStyle />
+      <Header />
+      <h1>hello world</h1>
     </>
   );
 }
