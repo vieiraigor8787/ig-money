@@ -28,7 +28,7 @@ export function Transactions() {
           </tr>
           <tr>
             <td>exemplo</td>
-            <td className="withdrow">- R$ xxx,xx</td>
+            <td className="withdraw">- R$ xxx,xx</td>
             <td>exemplo</td>
             <td>xx/xx/xxxx</td>
           </tr>
