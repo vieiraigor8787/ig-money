@@ -5,6 +5,7 @@ import { Dashboard } from "./components/Dashboard";
 import { NewTransactionModal } from "./components/NewTransactionModal";
 
 import { GlobalStyle } from "./sytles/global";
+import { TransactionsProvider } from "./TransactionsContext";
 
 export function App() {
   const [isNewTransactionModal, setIsNewModalTransactionModal] =
@@ -19,13 +20,13 @@ export function App() {
   }
 
   return (
-    <>
+    <TransactionsProvider>
       <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
       <Dashboard />
       <NewTransactionModal isOpen={isNewTransactionModal}
         onRequestClose={handleCloseNewTransactionModal}
       />
       <GlobalStyle />
-    </>
+    </TransactionsProvider>
   );
 }
