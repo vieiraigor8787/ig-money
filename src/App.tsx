@@ -5,7 +5,7 @@ import { Dashboard } from "./components/Dashboard";
 import { NewTransactionModal } from "./components/NewTransactionModal";
 
 import { GlobalStyle } from "./sytles/global";
-import { TransactionsProvider } from "./TransactionsContext";
+import { TransactionsProvider } from "./hooks/useTransactions";
 
 export function App() {
   const [isNewTransactionModal, setIsNewModalTransactionModal] =
