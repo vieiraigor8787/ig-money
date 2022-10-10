@@ -1,20 +1,14 @@
-import logo from "../../assets/logo.svg";
+import { HeaderContainer, HeaderContent, NewTransactionButton } from "./styles";
 
-import { Container, Content } from "./styles";
+import logoImg from '../../assets/logo.svg';
 
-interface HeaderProps {
-  onOpenNewTransactionModal: () => void;
-}
-
-export function Header({ onOpenNewTransactionModal }: HeaderProps) {
+export function Header() {
   return (
-    <Container>
-      <Content>
-        <img src={logo} alt="logo ig money" />
-        <button type="button" onClick={onOpenNewTransactionModal}>
-          Nova transação
-        </button>
-      </Content>
-    </Container>
-  );
+   <HeaderContainer>
+    <HeaderContent>
+      <img src={logoImg} alt="" />
+      <NewTransactionButton>Nova Transação</NewTransactionButton>
+    </HeaderContent>
+   </HeaderContainer>
+  )
 }
